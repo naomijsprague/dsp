@@ -44,7 +44,8 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+My sister and I use this emoji to indicate something is "close enough": ~o~
+It's supposed to be a person wiggling their arms, but It's remarkably close to ~@~, which google interprets as :poop:
 
 ---
 
