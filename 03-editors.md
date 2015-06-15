@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Emacs. Because the tutorial was easier to understand. I know how to exit vim, and that's enough. 
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Spyder, but I've also installed Sublime as an option. I'm a beginner but Spyder appeals to me because of the IPython terminal integration, and it's similar in setup to RStudio so it feels comfortable. You can switch between multiple open files in Spyder with ctrl+page up or ctrl+page down. The editor can be customized in the preferences menu when Spyder is open, python>preferences>editor.
 
 ---
