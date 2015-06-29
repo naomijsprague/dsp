@@ -18,6 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count < 10:
+        return "Number of donuts: %s" % count
+    else:
+        return "Number of donuts: many"
+        
     raise NotImplementedError
 
 
@@ -37,6 +42,13 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+        return ''
+    else:
+        front = s[:2]
+        back = s[(len(s)-2):]
+        return front + back
+        
     raise NotImplementedError
 
 
@@ -74,6 +86,14 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    afront = a[:2]
+    aback = a[2:]
+    bfront = b[0:2]
+    bback = b[2:]
+    new_first = bfront + aback
+    new_second = afront +bback
+    return new_first + ' '+ new_second
+    
     raise NotImplementedError
 
 
