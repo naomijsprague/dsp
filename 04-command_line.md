@@ -20,7 +20,7 @@ Make a cheat sheet for yourself: a list of commands and what they do, focused on
  git init: initialize a directory for git versioning
  git status: checks the status of versioning (have there been changes/new files since previous version?)
  echo : prints the current value of variable in the environment
- * is a wildcard
+ '*' is a wildcard
 
 ---
 
