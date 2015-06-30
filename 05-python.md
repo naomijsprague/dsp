@@ -43,14 +43,34 @@ print type(myset)
 print len(myset)
 print myset
 ```
+
 ---
 
 
 ---
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
+>
+Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called "lambda". Creates a temporary function.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+```def f (x): return x**2
+
+print f(8)
+
+
+g = lambda x: x**2 
+
+print g(8)
+
+def get_kg(pounds): return pounds/2.2046
+
+print get_kg(75)
+
+
+g = lambda pounds: pounds/2.2046 
+
+print g(75)
+```
 
 ---
 
