@@ -44,16 +44,17 @@ print len(myset)
 print myset
 ```
 
----
+--- 
 
 
 ---
-
-Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
+Describe Python's 'lambda'. What is it, and what is it used for? Give at least one example, including an example of using a 'lambda' in the 'key' argument to 'sorted'.
 >
 Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called "lambda". Creates a temporary function.
 
-```def f (x): return x**2
+
+```
+def f (x): return x**2
 
 print f(8)
 
@@ -66,10 +67,10 @@ def get_kg(pounds): return pounds/2.2046
 
 print get_kg(75)
 
-
 g = lambda pounds: pounds/2.2046 
 
 print g(75)
+
 ```
 
 ---
@@ -77,14 +78,14 @@ print g(75)
 
 ---
 
-Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
+Explain list comprehensions. Give examples and show equivalents with 'map' and 'filter'. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
 
-Write a Markov text generator, [markov.py](python/markov.py). Your program should be called from the command line with two arguments: the name of a file containing text to read, and the number of words to generate. For example, if `chains.txt` contains the short story by Frigyes Karinthy, we could run:
+Write a Markov text generator, [markov.py](python/markov.py). Your program should be called from the command line with two arguments: the name of a file containing text to read, and the number of words to generate. For example, if 'chains.txt' contains the short story by Frigyes Karinthy, we could run:
 
 ```bash
 ./markov.py chains.txt 40
