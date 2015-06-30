@@ -66,41 +66,30 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    
-    raise NotImplementedError
-
+    def sort_last(tuples):
+        sorted_by_second = sorted(tuples, key=lambda tup: tup[-1])
+    print sorted_by_second
+   
 
 def remove_adjacent(nums):
-    """
-    Given a list of numbers, return a list where all adjacent equal
-    elements have been reduced to a single element, so [1, 2, 2, 3]
-    returns [1, 2, 3]. You may create a new list or modify the passed
-    in list.
+    i = 0
+    while i < len(nums)-1:
+        if nums[i] == nums[i+1]:
+            del(nums[i])
+        i = i+1
+    print nums
 
-    >>> remove_adjacent([1, 2, 2, 3])
-    [1, 2, 3]
-    >>> remove_adjacent([2, 2, 3, 3, 3])
-    [2, 3]
-    >>> remove_adjacent([3, 2, 3, 3, 3])
-    [3, 2, 3]
-    >>> remove_adjacent([])
-    []
-    """
-    raise NotImplementedError
+remove_adjacent([1, 2, 2, 3])  
 
 
 def linear_merge(list1, list2):
-    """
-    Given two lists sorted in increasing order, create and return a
-    merged list of all the elements in sorted order. You may modify
-    the passed in lists. Ideally, the solution should work in "linear"
-    time, making a single pass of both lists.
-
-    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
-    ['aa', 'aa', 'aa', 'bb', 'bb']
-    """
-    raise NotImplementedError
+    def linear_merge(list1, list2):
+    new_list = list1
+    for i in range(len(list2)):
+        new_list.append(list2[i])   
+    new_list.sort()
+    print new_list
+    
+    
+    
+linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
