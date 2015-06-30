@@ -82,7 +82,7 @@ Explain list comprehensions. Give examples and show equivalents with 'map' and '
 
 >
 map(aFunction, aSequence) takes an iterable object(aSequence) and applies a function to all the elements of the object. It returns a list where the function has been processed.
-
+>
 filter tests each element of an iterable object and keeps those that test True. 
 
 ```
