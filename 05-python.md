@@ -80,7 +80,23 @@ print g(75)
 
 Explain list comprehensions. Give examples and show equivalents with 'map' and 'filter'. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>
+map(aFunction, aSequence) takes an iterable object(aSequence) and applies a function to all the elements of the object. It returns a list where the function has been processed.
+
+filter tests each element of an iterable object and keeps those that test True. 
+
+```
+*my example of Filter*
+roster = ('Fred', 'Anne', 'George', 'Arthur', 'Catherine', 'Amy', 'Elizabeth')
+print roster
+
+print len(roster)
+
+short_names = filter(lambda x: len(x)<=4, roster)
+
+print short_names
+print len(short_names)
+```
 
 ---
 
