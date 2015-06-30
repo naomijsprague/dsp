@@ -68,6 +68,14 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    new_word = s[:1]
+    for i in s[1:]:
+        if i == s[:1]:
+            new_word =  new_word + '*'
+        else:
+            new_word = new_word + i
+    return new_word
+    
     raise NotImplementedError
 
 
@@ -106,11 +114,18 @@ def verbing(s):
 
     >>> verbing('hail')
     'hailing'
-    >>> verbing('swiming')
-    'swimingly'
+    >>> verbing('swimming')
+    'swimmingly'
     >>> verbing('do')
     'do'
     """
+    if len(s) >= 3:
+        if s[len(s)-3:] == 'ing':        
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
     raise NotImplementedError
 
 
@@ -131,6 +146,7 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    
     raise NotImplementedError
 
 
