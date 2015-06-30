@@ -18,7 +18,7 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+* Lists are mutable, tuples are immutable. Tuples will work as keys in dictionaries.
 
 ---
 
@@ -27,8 +27,21 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+* Sets can't contain duplicates
+* Sets are unordered
+* In order to find an element in a set, a hash lookup is used (which is why sets are unordered). This makes __contains__ (in operator) a lot more efficient for sets than lists.
+* Sets can only contain hashable items (see #3). If you try: set(([1],[2])) you'll get a TypeError.
+```
+mylist=[5, 25, 3, 400, 21, 25, 5]
 
+print type(mylist)
+print len(mylist)
+
+myset= set(mylist)
+print type(myset)
+print len(myset)
+print myset
+```
 ---
 
 
